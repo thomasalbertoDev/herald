@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herald</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <!-- Iconify -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <!-- NAV SEARCH START -->
+    <section id="nav_search">
+      <!-- NAV SEARCH START -->
+      <nav class="bg-white border-b border-gray-200">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 container"
+        >
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap"
+              >Logo</span
+            >
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-3 py-2 text-center rounded-full"
+            >
+              <iconify-icon
+                icon="material-symbols:dark-mode-outline"
+                width="1.5rem"
+                height="1.5rem"
+                class="text-white"
+              ></iconify-icon>
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
+            >
+              <li>
+                <form class="max-w-md mx-auto">
+                  <label
+                    for="default-search"
+                    class="mb-2 text-sm font-medium text-gray-900 sr-only"
+                    >Search</label
+                  >
+                  <div class="relative w-full">
+                    <div
+                      class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+                    >
+                      <iconify-icon
+                        icon="material-symbols:search"
+                        width="1.5rem"
+                        height="1.5rem"
+                        class="text-gray-400"
+                      ></iconify-icon>
+                    </div>
+                    <input
+                      type="search"
+                      id="default-search"
+                      class="block w-full p-3 px-64 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+                      placeholder="Cari berita..."
+                      required
+                    />
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NAV SEARCH END -->
+    </section>
+    <!-- NAV SEARCH END -->
+
+    <!-- NAV MENU START -->
+    <section id="nav_menu">
+      <!-- NAV MENU START -->
+      <nav class="bg-blue-700 rounded-md lg:block hidden container mt-10">
+        <div
+          class="w-full flex flex-wrap items-center justify-center mx-auto p-4"
+        >
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white md:p-0 font-semibold"
+                  aria-current="page"
+                  >Populer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white md:p-0 font-semibold"
+                  aria-current="page"
+                  >News</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white md:p-0 font-semibold"
+                  aria-current="page"
+                  >PSM</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white md:p-0 font-semibold"
+                  aria-current="page"
+                  >Sulsel</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white md:p-0 font-semibold"
+                  aria-current="page"
+                  >Politik</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white md:p-0 font-semibold"
+                  aria-current="page"
+                  >Ekonomi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white md:p-0 font-semibold"
+                  aria-current="page"
+                  >Makasar</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white md:p-0 font-semibold"
+                  aria-current="page"
+                  >Peristiwa</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white md:p-0 font-semibold"
+                  aria-current="page"
+                  >Komunitas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white md:p-0 font-semibold"
+                  aria-current="page"
+                  >Kesehatan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white md:p-0 font-semibold"
+                  aria-current="page"
+                  >Lifestyle</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white md:p-0 font-semibold"
+                  aria-current="page"
+                  >Kampus</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NAV MENU END -->
+    </section>
+    <!-- NAV MENU END -->
+
+    <!-- CAROUSEL START -->
+    <section id="carousel">
+      <div
+        id="controls-carousel"
+        class="w-full container"
+        data-carousel="static"
+      >
+        <!-- Carousel wrapper -->
+        <div class="h-56 overflow-hidden rounded-lg md:h-96 mt-10">
+          <!-- Item 1 -->
+          <img src="./assets/images/carousel.jpg" class="w-full" alt="..." />
+        </div>
+      </div>
+    </section>
+    <!-- CAROUSEL END -->
+
+    <!-- DATA BERITA START -->
+    <section id="data">
+      <div class="grid lg:grid-cols-3 gap-4 container my-6">
+        <div class="w-full lg:col-span-2">
+          <div class="relative">
+            <img
+              src="./assets/images/berita.jpg"
+              alt="berita"
+              class="w-full h-full object-cover mix-blend-overlay rounded-t-md"
+            />
+            <div
+              class="absolute inset-0 bg-black-500 bg-opacity-50 rounded-t-md"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 p-6 bg-black bg-opacity-50 text-white"
+            >
+              <h1 class="text-2xl font-bold mb-2">Judul Berita disini</h1>
+              <span class="text-sm">News - 10 Juni 2024, 19:27</span>
+            </div>
+          </div>
+          <div class="bg-blue-700 p-6 rounded-b-md">
+            <div class="flex items-center justify-between text-white gap-4">
+              <h1 class="font-medium text-base">Berita Utama</h1>
+              <hr class="flex-1 border border-white" />
+            </div>
+            <div
+              class="flex text-start items-center justify-between mt-4 text-white font-semibold gap-4"
+            >
+              <h1 class="text-base">
+                <a href="#">
+                  Bahas Masa Depan Makassar, Rahman Bando Temui Danny Pomanto
+                </a>
+              </h1>
+              <h1 class="text-base">
+                <a href="#"> Pj Gubernur Puji Summer Camp Tompobulu Pangkep </a>
+              </h1>
+            </div>
+          </div>
+          <hr class="mt-10 border" />
+          <div class="block">
+            <h1 class="text-blue-700 font-bold mt-3 text-lg">News Feed</h1>
+            <div class="block mt-10">
+              <!-- BERITA 1 -->
+              <div
+                class="flex items-center justify-between gap-4 my-5"
+                id="berita_1"
+              >
+                <div class="">
+                  <img
+                    src="./assets/images/berita_1.jpeg"
+                    alt="Berita 1"
+                    class="w-64 h-auto object-cover"
+                  />
+                </div>
+                <div class="block w-full">
+                  <h1 class="lg:text-xl font-bold mb-2">
+                    Ikuti PLN Mobile Herald Run 2024, Daftar di Sini!
+                  </h1>
+                  <span class="text-sm font-semibold text-gray-400"
+                    >Event - 7 Mei 2024, 22:00</span
+                  >
+                </div>
+              </div>
+
+              <!-- BERITA 2 -->
+              <div
+                class="flex items-center justify-between gap-4 my-5"
+                id="berita_2"
+              >
+                <div class="">
+                  <img
+                    src="./assets/images/berita_2.jpg"
+                    alt="Berita 2"
+                    class="w-64 h-auto object-cover"
+                  />
+                </div>
+                <div class="block w-full">
+                  <h1 class="lg:text-xl font-bold mb-2">
+                    WR lll UMI Dukung Nasional Climbing Competition Mapala UMI,
+                    Harap Citra Kampus Semakin Baik
+                  </h1>
+                  <span class="text-sm font-semibold text-gray-400"
+                    >Kampus - 7 Mei 2024, 22:00</span
+                  >
+                </div>
+              </div>
+
+              <!-- BERITA 3 -->
+              <div
+                class="flex items-center justify-between gap-4 my-5"
+                id="berita_3"
+              >
+                <div class="">
+                  <img
+                    src="./assets/images/berita_3.jpg"
+                    alt="Berita 3"
+                    class="w-64 h-auto object-cover"
+                  />
+                </div>
+                <div class="block w-full">
+                  <h1 class="lg:text-xl font-bold mb-2">
+                    Begini Nasib 400 Penumpang Kapal KM Umsini yang Terkabar di
+                    Pelabuhan Soekarno-Hatta
+                  </h1>
+                  <span class="text-sm font-semibold text-gray-400"
+                    >Peristiwa - 7 Mei 2024, 22:00</span
+                  >
+                </div>
+              </div>
+
+              <!-- BERITA 4 -->
+              <div
+                class="flex items-center justify-between gap-4 my-5"
+                id="berita_4"
+              >
+                <div class="">
+                  <img
+                    src="./assets/images/berita_4.jpeg"
+                    alt="Berita 4"
+                    class="w-64 h-auto object-cover"
+                  />
+                </div>
+                <div class="block w-full">
+                  <h1 class="lg:text-xl font-bold mb-2">
+                    Antisipasi Pengangguran dan Kemiskinan, Pj Bupati Takalar
+                    Berkolaborasi Dengan BBPVP Makassar
+                  </h1>
+                  <span class="text-sm font-semibold text-gray-400"
+                    >Daerah - 7 Mei 2024, 22:00</span
+                  >
+                </div>
+              </div>
+
+              <!-- BERITA 5 -->
+              <div
+                class="flex items-center justify-between gap-4 my-5"
+                id="berita_4"
+              >
+                <div class="">
+                  <img
+                    src="./assets/images/berita_5.jpeg"
+                    alt="Berita 5"
+                    class="w-64 h-auto object-cover"
+                  />
+                </div>
+                <div class="block w-full">
+                  <h1 class="lg:text-xl font-bold mb-2">
+                    Komunitas The Young Oldies Sepakat Silaturrahmi di Villa
+                    Tanjung Bayang
+                  </h1>
+                  <span class="text-sm font-semibold text-gray-400"
+                    >Komunitas - 7 Mei 2024, 22:00</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-3 me-2 mb-2 focus:outline-none w-full mt-5"
+            >
+              Selengkapnya
+            </button>
+          </div>
+        </div>
+        <div class="w-full">
+          <img
+            src="./assets/images/iklan.webp"
+            alt="iklan"
+            class="rounded-md mb-5 w-full"
+          />
+          <img
+            src="./assets/images/iklan_2.jpeg"
+            alt="iklan"
+            class="rounded-md mb-5 w-full"
+          />
+
+          <hr class="mt-10 border" />
+          <h1 class="text-blue-700 font-bold mt-3 text-lg">Berita Populer</h1>
+          <div class="block">
+            <!-- Berita Populer 1 -->
+            <div class="flex items-center justify-between my-4">
+              <h1 class="font-semibold p-6 text-gray-500">#1</h1>
+              <p class="font-bold">
+                DPD Demokrat Sulsel Keluarkan Surat Tugas untuk Enam Kabupaten,
+                Siapa Saja?
+              </p>
+            </div>
+
+            <!-- Berita Populer 2 -->
+            <div class="flex items-center justify-between my-4">
+              <h1 class="font-semibold p-6 text-gray-500">#2</h1>
+              <p class="font-bold">
+                FK IKB KJP Palopo Bukti Karya UMI sebagai PTS Unggul dalam
+                Meningkatkan Mutu Pendidikan
+              </p>
+            </div>
+
+            <!-- Berita Populer 3 -->
+            <div class="flex items-center justify-between my-4">
+              <h1 class="font-semibold p-6 text-gray-500">#3</h1>
+              <p class="font-bold">
+                Percepatan Transformasi, SMA Islam Athirah Bukit Baruga Uji Coba
+                Penggunaan Smart Classroom
+              </p>
+            </div>
+
+            <!-- Berita Populer 4 -->
+            <div class="flex items-center justify-between my-4">
+              <h1 class="font-semibold p-6 text-gray-500">#4</h1>
+              <p class="font-bold">
+                Temui Danny Pomanto, Rahman Bando Minta Restu Berpaket dengan
+                Indira Yusuf di Pilwalkot Makassar
+              </p>
+            </div>
+
+            <!-- Berita Populer 5 -->
+            <div class="flex items-center justify-between my-4">
+              <h1 class="font-semibold p-6 text-gray-500">#5</h1>
+              <p class="font-bold">
+                Puluhan Kader HMI Gowa Raya Gelar Aksi Tolak Tapera
+              </p>
+            </div>
+          </div>
+
+          <img
+            src="./assets/images/iklan_3.jpeg"
+            alt="iklan"
+            class="rounded-md mb-5 w-full"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- DATA BERITA END -->
+
+    <!-- FOOTER START -->
+    <section id="footer">
+      <footer
+        class="bg-gray-100 border border-t-4 border-blue-700 shadow mt-10"
+      >
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse justify-center"
+          >
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap"
+              >Logo</span
+            >
+          </a>
+          <a href="#" class="flex items-center mt-5 justify-center">
+            <img
+              src="./assets/images/google_play.webp"
+              class="h-10"
+              alt="Flowbite Logo"
+            />
+          </a>
+
+          <div class="text-center">
+            <!-- Menu -->
+            <ul
+              class="font-medium flex flex-col justify-center items-center p-4 mt-4 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0 w-full"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black-500 rounded md:bg-transparent md:p-0"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black-500 rounded md:bg-transparent md:p-0"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black-500 rounded md:bg-transparent md:p-0"
+                  >Redaksi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black-500 rounded md:bg-transparent md:p-0"
+                  >Kebijakan Privasi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black-500 rounded md:bg-transparent md:p-0"
+                  >Kontak Kami</a
+                >
+              </li>
+            </ul>
+
+            <!-- Social Media -->
+            <ul
+              class="font-medium flex justify-center items-center p-4 mt-4 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0 w-full"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black-500 rounded md:bg-transparent md:p-0"
+                  aria-current="page"
+                >
+                  <iconify-icon
+                    icon="logos:facebook"
+                    width="1.5rem"
+                    height="1.5rem"
+                    class="text-white"
+                  ></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black-500 rounded md:bg-transparent md:p-0"
+                >
+                  <iconify-icon
+                    icon="skill-icons:instagram"
+                    width="1.5rem"
+                    height="1.5rem"
+                    class="text-white"
+                  ></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black-500 rounded md:bg-transparent md:p-0"
+                >
+                  <iconify-icon
+                    icon="devicon:linkedin"
+                    width="1.5rem"
+                    height="1.5rem"
+                    class="text-white"
+                  ></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black-500 rounded md:bg-transparent md:p-0"
+                >
+                  <iconify-icon
+                    icon="logos:twitter"
+                    width="1.5rem"
+                    height="1.5rem"
+                    class="text-white"
+                  ></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black-500 rounded md:bg-transparent md:p-0"
+                >
+                  <iconify-icon
+                    icon="logos:youtube-icon"
+                    width="1.5rem"
+                    height="1.5rem"
+                    class="text-white"
+                  ></iconify-icon>
+                </a>
+              </li>
+            </ul>
+            <span
+              class="block text-sm text-black-500 sm:text-center font-semibold"
+              >© 2024 <a href="#" class="hover:underline">Herald</a>. All Rights
+              Reserved.</span
+            >
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- FOOTER END -->
+
+    <!-- Script Flowbite -->
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
